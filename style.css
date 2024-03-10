@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: changeBG 2s alternate infinite;
+}
+
+.base {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  background-color: rgb(69, 119, 160);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn_resetar,
+#btn_modo,
+#btn_iniciar_pausar {
+  position: absolute;
+  background-color: rgb(77, 132, 177);
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn_resetar {
+  left: 8%;
+  top: 3.5%;
+  transform: rotateZ(45deg);
+}
+
+#btn_modo {
+  top: -9.5%;
+  left: 44%;
+}
+
+#btn_iniciar_pausar {
+  left: 80%;
+  top: 3.5%;
+  transform: rotateZ(-45deg);
+}
+
+#topo_btn_resetar,
+#topo_btn_modo,
+#topo_btn_iniciar_pausar {
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  background-color: rgb(62, 110, 150);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+#topo_btn_resetar {
+  right: 50%;
+  top: 41%;
+  transform: rotateZ(90deg);
+}
+
+#topo_btn_modo {
+  top: -10%;
+}
+
+#topo_btn_iniciar_pausar {
+  left: 50%;
+  top: 41%;
+  transform: rotateZ(-90deg);
+}
+
+.contorno_base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid rgb(87, 87, 87);
+  border-radius: 50%;
+  width: 400px;
+  height: 500px;
+  background-color: rgb(201, 201, 201);
+}
+
+.visor {
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.resetar_btn {
+  width: 40px !important;
+  top: 4.9% !important;
+  left: 11.5% !important;
+  transition: 0.3s !important;
+}
+
+.resetar_topo {
+  right: 30% !important;
+  transition: 0.3s !important;
+}
+
+.modo_btn {
+  height: 40px !important;
+  top: -6% !important;
+}
+
+.iniciar_btn {
+  width: 40px !important;
+  left:81% !important;
+  top: 4.9% !important;
+}
+
+.iniciar_topo {
+  left: 29% !important;
+  top: 41% !important;
+}
+
+h2 {
+    color: rgb(77, 77, 77);
+}
+
+@keyframes changeBG {
+  0% {
+    background-color: rgb(143, 185, 204);
+  }
+
+  100% {
+    background-color: rgb(102, 175, 209);
+  }
+}
